@@ -1,0 +1,226 @@
+export interface Translations {
+  [key: string]: {
+    [language: string]: string;
+  };
+}
+
+export const translations: Translations = {
+  // Common
+  'common.save': {
+    en: 'Save',
+    ar: 'حفظ',
+    es: 'Guardar',
+    fr: 'Enregistrer',
+    de: 'Speichern',
+    zh: '保存',
+    ja: '保存',
+    ko: '저장',
+  },
+  'common.cancel': {
+    en: 'Cancel',
+    ar: 'إلغاء',
+    es: 'Cancelar',
+    fr: 'Annuler',
+    de: 'Abbrechen',
+    zh: '取消',
+    ja: 'キャンセル',
+    ko: '취소',
+  },
+  'common.submit': {
+    en: 'Submit',
+    ar: 'إرسال',
+    es: 'Enviar',
+    fr: 'Soumettre',
+    de: 'Einreichen',
+    zh: '提交',
+    ja: '送信',
+    ko: '제출',
+  },
+  'common.loading': {
+    en: 'Loading...',
+    ar: 'جاري التحميل...',
+    es: 'Cargando...',
+    fr: 'Chargement...',
+    de: 'Laden...',
+    zh: '加载中...',
+    ja: '読み込み中...',
+    ko: '로딩 중...',
+  },
+
+  // Inspection Form
+  'inspection.title': {
+    en: 'Inspection Form',
+    ar: 'نموذج التفتيش',
+    es: 'Formulario de Inspección',
+    fr: 'Formulaire d\'Inspection',
+    de: 'Inspektionsformular',
+    zh: '检查表格',
+    ja: '検査フォーム',
+    ko: '검사 양식',
+  },
+  'inspection.airQuality': {
+    en: 'Air Quality Index',
+    ar: 'مؤشر جودة الهواء',
+    es: 'Índice de Calidad del Aire',
+    fr: 'Indice de Qualité de l\'Air',
+    de: 'Luftqualitätsindex',
+    zh: '空气质量指数',
+    ja: '大気質指数',
+    ko: '대기질 지수',
+  },
+  'inspection.dustReading': {
+    en: 'Dust Reading (µg/m³)',
+    ar: 'قراءة الغبار (µg/m³)',
+    es: 'Lectura de Polvo (µg/m³)',
+    fr: 'Lecture de Poussière (µg/m³)',
+    de: 'Staubmessung (µg/m³)',
+    zh: '粉尘读数 (µg/m³)',
+    ja: 'ダスト測定値 (µg/m³)',
+    ko: '먼지 측정값 (µg/m³)',
+  },
+  'inspection.waterQuality': {
+    en: 'Water Quality',
+    ar: 'جودة المياه',
+    es: 'Calidad del Agua',
+    fr: 'Qualité de l\'Eau',
+    de: 'Wasserqualität',
+    zh: '水质',
+    ja: '水質',
+    ko: '수질',
+  },
+  'inspection.emissions': {
+    en: 'Emissions Level',
+    ar: 'مستوى الانبعاثات',
+    es: 'Nivel de Emisiones',
+    fr: 'Niveau d\'Émissions',
+    de: 'Emissionsniveau',
+    zh: '排放水平',
+    ja: '排出レベル',
+    ko: '배출 수준',
+  },
+  'inspection.safety': {
+    en: 'Safety Compliance',
+    ar: 'الامتثال للسلامة',
+    es: 'Cumplimiento de Seguridad',
+    fr: 'Conformité Sécurité',
+    de: 'Sicherheitskonformität',
+    zh: '安全合规',
+    ja: '安全コンプライアンス',
+    ko: '안전 준수',
+  },
+  'inspection.waste': {
+    en: 'Waste Management',
+    ar: 'إدارة النفايات',
+    es: 'Gestión de Residuos',
+    fr: 'Gestion des Déchets',
+    de: 'Abfallmanagement',
+    zh: '废物管理',
+    ja: '廃棄物管理',
+    ko: '폐기물 관리',
+  },
+  'inspection.notes': {
+    en: 'Site Notes',
+    ar: 'ملاحظات الموقع',
+    es: 'Notas del Sitio',
+    fr: 'Notes du Site',
+    de: 'Standortnotizen',
+    zh: '现场备注',
+    ja: 'サイトノート',
+    ko: '현장 메모',
+  },
+  'inspection.signature': {
+    en: 'Inspector Signature',
+    ar: 'توقيع المفتش',
+    es: 'Firma del Inspector',
+    fr: 'Signature de l\'Inspecteur',
+    de: 'Inspektorsignatur',
+    zh: '检查员签名',
+    ja: '検査員署名',
+    ko: '검사원 서명',
+  },
+  'inspection.clientSignature': {
+    en: 'Client Signature',
+    ar: 'توقيع العميل',
+    es: 'Firma del Cliente',
+    fr: 'Signature du Client',
+    de: 'Kundensignatur',
+    zh: '客户签名',
+    ja: 'クライアント署名',
+    ko: '고객 서명',
+  },
+
+  // Error Messages
+  'error.required': {
+    en: 'This field is required',
+    ar: 'هذا الحقل مطلوب',
+    es: 'Este campo es obligatorio',
+    fr: 'Ce champ est requis',
+    de: 'Dieses Feld ist erforderlich',
+    zh: '此字段为必填项',
+    ja: 'この項目は必須です',
+    ko: '이 필드는 필수입니다',
+  },
+  'error.invalidNumber': {
+    en: 'Please enter a valid number',
+    ar: 'يرجى إدخال رقم صحيح',
+    es: 'Por favor ingrese un número válido',
+    fr: 'Veuillez saisir un nombre valide',
+    de: 'Bitte geben Sie eine gültige Zahl ein',
+    zh: '请输入有效数字',
+    ja: '有効な数値を入力してください',
+    ko: '유효한 숫자를 입력하세요',
+  },
+  'error.networkError': {
+    en: 'Network error. Data saved offline.',
+    ar: 'خطأ في الشبكة. تم حفظ البيانات دون اتصال.',
+    es: 'Error de red. Datos guardados sin conexión.',
+    fr: 'Erreur réseau. Données sauvegardées hors ligne.',
+    de: 'Netzwerkfehler. Daten offline gespeichert.',
+    zh: '网络错误。数据已离线保存。',
+    ja: 'ネットワークエラー。データはオフラインで保存されました。',
+    ko: '네트워크 오류. 데이터가 오프라인으로 저장되었습니다.',
+  },
+
+  // Status Messages
+  'status.online': {
+    en: 'Online',
+    ar: 'متصل',
+    es: 'En línea',
+    fr: 'En ligne',
+    de: 'Online',
+    zh: '在线',
+    ja: 'オンライン',
+    ko: '온라인',
+  },
+  'status.offline': {
+    en: 'Offline',
+    ar: 'غير متصل',
+    es: 'Sin conexión',
+    fr: 'Hors ligne',
+    de: 'Offline',
+    zh: '离线',
+    ja: 'オフライン',
+    ko: '오프라인',
+  },
+  'status.syncing': {
+    en: 'Syncing...',
+    ar: 'جاري المزامنة...',
+    es: 'Sincronizando...',
+    fr: 'Synchronisation...',
+    de: 'Synchronisierung...',
+    zh: '同步中...',
+    ja: '同期中...',
+    ko: '동기화 중...',
+  },
+};
+
+export function translate(key: string, language: string = 'en'): string {
+  return translations[key]?.[language] || translations[key]?.['en'] || key;
+}
+
+export function useTranslation(language: string = 'en') {
+  return {
+    t: (key: string) => translate(key, language),
+    language,
+  };
+}
